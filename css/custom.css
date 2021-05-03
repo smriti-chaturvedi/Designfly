@@ -30,6 +30,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   display: flex;
   height: 105px;
   justify-content: space-evenly;
+  width: 100vw;
 }
 
 .site-header-menu {
@@ -656,4 +657,234 @@ a.related-post__author {
 a.popular-post__author {
   color: #ef4634;
   text-decoration: none;
+}
+
+/***********************************************************
+************************************************************
+MEDIA QUERIES
+************************************************************
+***********************************************************/
+
+@media screen and (max-width: 720px) {
+  /* Features Section */
+  .features-section-container {
+    background-image: url("../assets/images/features-repeatable-bg.png");
+    height: auto;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .features-section {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+  }
+
+  .site-search-box {
+    display: none;
+  }
+
+  /* Home Page */
+  .home-page {
+    width: 100%;
+  }
+
+  .home-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-images-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+  }
+
+  .home-head__button {
+    margin-bottom: 10px;
+  }
+
+  /* Portfolio Page */
+  .portfolio-container {
+    width: 100%;
+  }
+
+  .portfolio-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-links a.portfolio-link {
+    border-radius: 3px;
+    margin: 3px;
+    padding: 8px;
+  }
+
+  .portfolio-links a.portfolio-link:hover {
+    background-color: #ef4634;
+  }
+
+  .portfolio-body {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portfolio-image {
+    border-radius: 10px;
+    grid-gap: 15px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 300px;
+  }
+
+  /* Blog Page */
+  .blog-container {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .blog-sidebar {
+    display: none;
+    height: 0px;
+  }
+
+  .blog-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-permalink {
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .blog-head {
+    align-items: center;
+    background-color: #222222;
+    border-radius: 5px;
+    color: #ffffff;
+    display: flex;
+    font-family: "Open sans", sans-serif;
+    height: 60px;
+    width: 100%;
+  }
+
+  .blog-head:hover {
+    background-color: #ef4634;
+  }
+
+  .blog-date {
+    border-right: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10%;
+  }
+
+  .blog-head__heading {
+    margin: 0;
+    padding-left: 3%;
+    width: 90%;
+  }
+
+  .blog-head__headingtxt {
+    font-family: "Open sans", sans-serif;
+    font-weight: normal;
+  }
+
+  .blog-summary {
+    display: flex;
+    margin-top: 3px;
+  }
+
+  .blog-thumbnail img {
+    height: 153px;
+    width: 220px;
+    border-radius: 10px;
+  }
+
+  .blog-content {
+    color: #62585f;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding-left: 3%;
+    width: 100%;
+  }
+
+  .blog-content__header {
+    border-bottom: 1px solid #222222;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+  }
+
+  /* Pagination */
+  .pagination {
+    font-family: "Open sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 25%;
+  }
+
+  /* Custom Portfolio Widget */
+  .portfolio-widget-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Custom Related Post Widget Styles */
+  .related-post__container {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .related-post-image {
+    border-radius: 5px;
+    height: 60px;
+    margin-right: 2px;
+    width: 60px;
+  }
+
+  .related-post__summary {
+    color: #62585f;
+  }
+
+  a.related-post__author {
+    color: #ef4634;
+    text-decoration: none;
+  }
+
+  /* Custom Popular Post Widget Styles
+--------------------------------------------- */
+  .popular-post__container {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  .popular-post-image {
+    border-radius: 5px;
+    height: 60px;
+    margin-right: 2px;
+    width: 60px;
+  }
+
+  .popular-post__summary {
+    color: #62585f;
+  }
+
+  a.popular-post__author {
+    color: #ef4634;
+    text-decoration: none;
+  }
 }

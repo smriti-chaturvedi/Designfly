@@ -25,9 +25,6 @@ $portfolio_query = new WP_Query( $args );
 			<div class="portfolio-header">
 				<div class="portfolio-head"><span class="portfolio-headtxt">DESIGN IS THE SOUL</span></div>
 				<div class="portfolio-links">
-					<!-- <a href="#" class="portfolio-link">Advertising</a>
-					<a href="#" class="portfolio-link">Multimedia</a>
-					<a href="#" class="portfolio-link">Photography</a> -->
 					<?php
 					$df_tags = get_terms( array( 'taxonomy' => 'post_tag' ) );
 					foreach ( $df_tags as $df_tag ) {
