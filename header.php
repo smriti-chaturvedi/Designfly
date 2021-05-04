@@ -26,6 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'designfly' ); ?></a>
 
 	<header id="masthead" class="site-header" style="background-image: url(<?php esc_html_e( get_theme_file_uri() . '/assets/images/rapeatable-bg.png' ); //phpcs:ignore ?>);">
+		<div class="header-alignment-container">
 		<div class="site-branding">
 			<?php
 			if ( has_custom_logo() ) {
@@ -66,6 +67,7 @@
 			</form>	
 		</div>
 		</div>
+		</div>
 	</header><!-- #masthead -->
 	<?php
 	if ( is_front_page() ) {
@@ -79,28 +81,30 @@
 		<?php
 	}
 	?>
-	<div class="features-section-container">	
-		<div class="features-section">
-			<div class="feature">
-				<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-1.png' ); //phpcs:ignore ?>" alt="advertising-image">
-				<div class="feature-content">
-					<div class="feature-link"><a href="#"><?php echo esc_html__( 'Advertising', 'designfly' ); ?></a></div>
-					<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+	<div class="alignment-container">
+		<div class="features-section-container">	
+			<div class="features-section">
+				<div class="feature">
+					<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-1.png' ); //phpcs:ignore ?>" alt="advertising-image">
+					<div class="feature-content">
+						<div class="feature-link"><a href="#"><?php echo esc_html__( 'Advertising', 'designfly' ); ?></a></div>
+						<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+					</div>
 				</div>
-			</div>
-			<div class="feature">
-				<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-2.png' ); //phpcs:ignore ?>" alt="advertising-image">
-				<div class="feature-content">
-					<div class="feature-link"><a href="#"><?php echo esc_html__( 'Multimedia', 'designfly' ); ?></a></div>
-					<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+				<div class="feature">
+					<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-2.png' ); //phpcs:ignore ?>" alt="advertising-image">
+					<div class="feature-content">
+						<div class="feature-link"><a href="#"><?php echo esc_html__( 'Multimedia', 'designfly' ); ?></a></div>
+						<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+					</div>
 				</div>
-			</div>
-			<div class="feature">
-				<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-3.png' ); //phpcs:ignore ?>" alt="advertising-image">
-				<div class="feature-content">
-					<div class="feature-link"><a href="#"><?php echo esc_html__( 'Photography', 'designfly' ); ?></a></div>
-					<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+				<div class="feature">
+					<img class="feature-icon" height="50px" src="<?php esc_attr_e( get_theme_file_uri() . '/assets/images/feature-icons-3.png' ); //phpcs:ignore ?>" alt="advertising-image">
+					<div class="feature-content">
+						<div class="feature-link"><a href="#"><?php echo esc_html__( 'Photography', 'designfly' ); ?></a></div>
+						<div class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	

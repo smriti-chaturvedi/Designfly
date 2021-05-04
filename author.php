@@ -20,6 +20,7 @@ $args            = array(
 
 $author_query = new WP_Query( $args );
 ?>
+<div class="main-container">
 <div class="blog-container">
 	<main id="primary" class="site-main">
 
@@ -59,6 +60,7 @@ $author_query = new WP_Query( $args );
 	<div class="blog-sidebar">
 		<?php get_sidebar(); ?>
 	</div>
+</div>
 </div>
 <?php designfly_pagination_bar( $author_query ); ?>
 <?php

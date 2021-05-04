@@ -23,24 +23,26 @@ get_header();
 
 		$home_query = new WP_Query( $args );
 		?>
-	<div class="home-page">
-		<div class="home-head">
-			<p class="home-head__title"><?php esc_html_e( 'D\'SIGN IS THE SOUL' ); ?></p>
-			<a href="#" class="home-head__button">
-				<span class="home-head__buttontxt"><?php esc_html_e( 'View All', 'designfly' ); ?></span>
-			</a>
-		</div>
-		<div class="home-images-container">
-		<?php
-		if ( $home_query->have_posts() ) {
-			while ( $home_query->have_posts() ) {
-				$home_query->the_post();
-				echo '<a href="' . esc_attr( get_permalink() ) . '" class="home-images__link">';
-				echo '<img class="home-images__image" src="' . esc_html( get_the_post_thumbnail_url() ) . '"/>';
-				echo '</a>';
+	<div class="main-container">
+		<div class="home-page">
+			<div class="home-head">
+				<p class="home-head__title"><?php esc_html_e( 'D\'SIGN IS THE SOUL' ); ?></p>
+				<a href="#" class="home-head__button">
+					<span class="home-head__buttontxt"><?php esc_html_e( 'View All', 'designfly' ); ?></span>
+				</a>
+			</div>
+			<div class="home-images-container">
+			<?php
+			if ( $home_query->have_posts() ) {
+				while ( $home_query->have_posts() ) {
+					$home_query->the_post();
+					echo '<a href="' . esc_attr( get_permalink() ) . '" class="home-images__link">';
+					echo '<img class="home-images__image" src="' . esc_html( get_the_post_thumbnail_url() ) . '"/>';
+					echo '</a>';
+				}
 			}
-		}
-		?>
+			?>
+			</div>
 		</div>
 	</div>
 		<?php

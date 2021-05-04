@@ -19,6 +19,7 @@ $args      = array(
 $tag_query = new WP_Query( $args );
 ?>
 
+<div class="main-container">
 <div class="blog-container">
 	<main id="primary" class="site-main">
 
@@ -59,6 +60,8 @@ $tag_query = new WP_Query( $args );
 		<?php get_sidebar(); ?>
 	</div>
 </div>
+</div>
+
 <?php designfly_pagination_bar( $tag_query ); ?>
 <?php
 get_footer();

@@ -25,12 +25,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 /* Header
 --------------------------------------------- */
 .site-header {
+  width: 100vw;
+}
+
+.header-alignment-container {
+  width: 1140px;
+  margin: 0 auto;
   align-items: center;
   box-shadow: 105px;
   display: flex;
   height: 105px;
   justify-content: space-evenly;
-  width: 100vw;
 }
 
 .site-header-menu {
@@ -73,12 +78,19 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   color: #ffffff;
 }
 
+/* Alignment for features
+----------------------------------------------*/
+.alignment-container {
+  background-image: url("../assets/images/features-repeatable-bg.png");
+  height: 101px;
+  width: 100vw;
+}
+
 /* Features Section
   --------------------------------------------- */
 .features-section-container {
-  background-image: url("../assets/images/features-repeatable-bg.png");
-  height: 101px;
-  width: 100%;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 .features-section {
@@ -87,7 +99,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   margin: auto;
-  max-width: 1024px;
+  width: 100%;
 }
 
 .feature {
@@ -136,11 +148,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .site-info {
   display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid #222222;
   border-top: 1px solid #222222;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1024px;
+  margin: auto;
 }
 
 .site-info-about {
@@ -191,18 +203,18 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .banner-container {
   background-image: url("../assets/images/full-slider.png");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  min-width: 100vw;
   height: 544px;
-  margin-top: 0;
-  width: 100%;
+  margin: 0;
 }
 
 .banner-intro {
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 100%;
+  min-width: 100vw;
 }
 
 .intro-heading {
@@ -228,7 +240,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   --------------------------------------------- */
 .home-page {
   font-family: "Open-sans", sans-serif;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1024px;
 }
 
@@ -277,12 +290,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 /* Blog Page Styles
  --------------------------------------------- */
+
+.main-container {
+  max-width: 100%;
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .blog-container {
   display: grid;
   grid-template-columns: 70% 25%;
   justify-content: space-between;
-  margin: auto;
-  max-width: 1024px;
 }
 
 .blog-body {
@@ -666,225 +684,4 @@ MEDIA QUERIES
 ***********************************************************/
 
 @media screen and (max-width: 720px) {
-  /* Features Section */
-  .features-section-container {
-    background-image: url("../assets/images/features-repeatable-bg.png");
-    height: auto;
-    width: 100%;
-    margin-right: 0px;
-  }
-
-  .features-section {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    margin: auto;
-    width: 100vw;
-  }
-
-  .site-search-box {
-    display: none;
-  }
-
-  /* Home Page */
-  .home-page {
-    width: 100%;
-  }
-
-  .home-head {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .home-images-container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
-  }
-
-  .home-head__button {
-    margin-bottom: 10px;
-  }
-
-  /* Portfolio Page */
-  .portfolio-container {
-    width: 100%;
-  }
-
-  .portfolio-links {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .portfolio-links a.portfolio-link {
-    border-radius: 3px;
-    margin: 3px;
-    padding: 8px;
-  }
-
-  .portfolio-links a.portfolio-link:hover {
-    background-color: #ef4634;
-  }
-
-  .portfolio-body {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .portfolio-image {
-    border-radius: 10px;
-    grid-gap: 15px;
-    height: 210px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    width: 300px;
-  }
-
-  /* Blog Page */
-  .blog-container {
-    display: grid;
-    grid-template-columns: 60% 30%;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .blog-sidebar {
-    display: none;
-    height: 0px;
-  }
-
-  .blog-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blog-permalink {
-    text-decoration: none;
-    width: 100%;
-  }
-
-  .blog-head {
-    align-items: center;
-    background-color: #222222;
-    border-radius: 5px;
-    color: #ffffff;
-    display: flex;
-    font-family: "Open sans", sans-serif;
-    height: 60px;
-    width: 100%;
-  }
-
-  .blog-head:hover {
-    background-color: #ef4634;
-  }
-
-  .blog-date {
-    border-right: 1px solid #ffffff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 10%;
-  }
-
-  .blog-head__heading {
-    margin: 0;
-    padding-left: 3%;
-    width: 90%;
-  }
-
-  .blog-head__headingtxt {
-    font-family: "Open sans", sans-serif;
-    font-weight: normal;
-  }
-
-  .blog-summary {
-    display: flex;
-    margin-top: 3px;
-  }
-
-  .blog-thumbnail img {
-    height: 153px;
-    width: 220px;
-    border-radius: 10px;
-  }
-
-  .blog-content {
-    color: #62585f;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    padding-left: 3%;
-    width: 100%;
-  }
-
-  .blog-content__header {
-    border-bottom: 1px solid #222222;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 5px;
-  }
-
-  /* Pagination */
-  .pagination {
-    font-family: "Open sans", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    margin-left: 25%;
-  }
-
-  /* Custom Portfolio Widget */
-  .portfolio-widget-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* Custom Related Post Widget Styles */
-  .related-post__container {
-    align-items: flex-start;
-    display: flex;
-  }
-
-  .related-post-image {
-    border-radius: 5px;
-    height: 60px;
-    margin-right: 2px;
-    width: 60px;
-  }
-
-  .related-post__summary {
-    color: #62585f;
-  }
-
-  a.related-post__author {
-    color: #ef4634;
-    text-decoration: none;
-  }
-
-  /* Custom Popular Post Widget Styles
---------------------------------------------- */
-  .popular-post__container {
-    align-items: flex-start;
-    display: flex;
-  }
-
-  .popular-post-image {
-    border-radius: 5px;
-    height: 60px;
-    margin-right: 2px;
-    width: 60px;
-  }
-
-  .popular-post__summary {
-    color: #62585f;
-  }
-
-  a.popular-post__author {
-    color: #ef4634;
-    text-decoration: none;
-  }
 }
