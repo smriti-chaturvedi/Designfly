@@ -142,6 +142,7 @@ add_action( 'widgets_init', 'designfly_widgets_init' );
 function designfly_scripts() {
 	wp_enqueue_style( 'designfly-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_enqueue_style( 'designflytheme-custom-style', get_template_directory_uri() . '/css/custom.css', array(), _S_VERSION );
+	wp_enqueue_style( 'designflytheme-custom-style-responsive', get_template_directory_uri() . '/css/responsive.css', array(), _S_VERSION );
 	wp_style_add_data( 'designfly-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'designfly-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

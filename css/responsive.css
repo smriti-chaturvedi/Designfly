@@ -1,0 +1,17 @@
+/*!
+Theme Name: designfly
+Theme URI: http://underscores.me/
+Author: Smriti Chaturvedi
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: designfly
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+}

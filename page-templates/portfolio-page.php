@@ -41,13 +41,13 @@ $portfolio_query = new WP_Query( $args );
 					if ( $portfolio_query->have_posts() ) {
 						while ( $portfolio_query->have_posts() ) {
 							$portfolio_query->the_post();
-							echo '<a class="portfolio-links thickbox" href="' . esc_html( get_the_post_thumbnail_url() ) . '?TB_iframe=true&width=350&height=450" rel="lightbox">';
-							echo '<div>';
-							echo '<img class="portfolio-image" src="' . esc_html( get_the_post_thumbnail_url() ) . '"/>';
-							echo '<div class="portfolio-image__viewbtn">
-							<img class="portfolio-favicon__image" src="' . esc_html( get_theme_file_uri( '/assets/images/favicon.ico' ) ) . '"> 
-							<button class="portfolio-viewing__btn" type="button">View Image</button>
-							</div> </div>';
+							add_thickbox();
+							echo '<div id="my-thickbox" style="display:none">';
+							echo '<img src="' . esc_html( get_the_post_thumbnail_url() ) . '" class="thickbox-image" >';
+							echo '<div class="thickbox-desc">Lorem ipsum dolor sit amet</div>';
+							echo '</div>';
+							echo '<a href="#TB_inline?&width=600&height=500&inlineId=my-thickbox" class="portfolio-links thickbox"">';
+							echo '<img class="portfolio-image" src= "' . esc_html( get_the_post_thumbnail_url() ) . '"/>';
 							echo '</a>';
 						}
 					} else {

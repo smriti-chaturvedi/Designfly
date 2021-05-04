@@ -35,11 +35,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   box-shadow: 105px;
   display: flex;
   height: 105px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .site-header-menu {
   display: flex;
+  justify-content: space-between;
 }
 
 .site-searchbar {
@@ -63,9 +64,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   font-family: "Open sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
-  padding: 10px;
+  padding: 5px;
   border: none;
   border-radius: 3px;
+  margin-right: 20px;
 }
 
 .site-nav-list > .menu-item a:hover {
@@ -84,6 +86,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   background-image: url("../assets/images/features-repeatable-bg.png");
   height: 101px;
   width: 100vw;
+  margin-top: 3px;
 }
 
 /* Features Section
@@ -144,6 +147,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   color: #62585f;
   font-family: "Open sans", sans-serif;
   font-size: 14px;
+  width: 100vw;
 }
 
 .site-info {
@@ -151,7 +155,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   justify-content: space-between;
   border-bottom: 1px solid #222222;
   border-top: 1px solid #222222;
-  max-width: 1024px;
+  width: 1140px;
   margin: auto;
 }
 
@@ -283,7 +287,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .home-images__image {
   height: 210px;
-  width: 300px;
+  width: 330px;
   border-radius: 10px;
   margin-right: 2px;
 }
@@ -327,6 +331,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 .blog-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .blog-permalink {
@@ -342,6 +347,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   display: flex;
   font-family: "Open sans", sans-serif;
   height: 60px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -370,12 +376,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .blog-summary {
   display: flex;
+  justify-content: space-evenly;
   margin-top: 3px;
 }
 
 .blog-thumbnail img {
   height: 153px;
-  width: 220px;
+  width: 290px;
   border-radius: 10px;
 }
 
@@ -499,7 +506,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   margin-right: auto;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 300px;
+  width: 330px;
 }
 
 .portfolio-image__viewbtn {
@@ -518,6 +525,25 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 .portfolio-links:hover .portfolio-image__viewbtn {
   opacity: 1;
+}
+
+/* Thickbox Styles
+--------------------------------------------- */
+#TB_window {
+  padding: 20px 20px 20px 20px;
+}
+
+.thickbox-image {
+  border-radius: 5px;
+  width: 580px;
+  height: 440px;
+}
+
+.thickbox-desc {
+  color: #62585f;
+  font-family: "Open sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Single Post Styles
@@ -682,6 +708,3 @@ a.popular-post__author {
 MEDIA QUERIES
 ************************************************************
 ***********************************************************/
-
-@media screen and (max-width: 720px) {
-}
