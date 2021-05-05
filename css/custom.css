@@ -24,11 +24,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 /* Header
 --------------------------------------------- */
-.site-header {
-  width: 100vw;
-}
-
 .header-alignment-container {
+  max-width: 100%;
   width: 1140px;
   margin: 0 auto;
   align-items: center;
@@ -55,7 +52,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   border: 1px solid #62585f;
   border-radius: 3px;
   height: 20px;
-  margin-right: 2px;
   width: 150px;
 }
 
@@ -143,11 +139,16 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 /* Footer
   --------------------------------------------- */
+.footer-container {
+  max-width: 100%;
+  width: 1140px;
+  margin: 0 auto;
+}
+
 .site-footer {
   color: #62585f;
   font-family: "Open sans", sans-serif;
   font-size: 14px;
-  width: 100vw;
 }
 
 .site-info {
@@ -509,22 +510,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   width: 330px;
 }
 
-.portfolio-image__viewbtn {
-  opacity: 0;
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
 .portfolio-links:hover .portfolio-image {
   opacity: 0.4;
-}
-
-.portfolio-links:hover .portfolio-image__viewbtn {
-  opacity: 1;
 }
 
 /* Thickbox Styles
@@ -651,10 +638,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.portfolio-widget-image {
+.portfolio-widget__image {
   border-radius: 5px;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
 }
 
 /* Custom Related Post Widget Styles
@@ -702,9 +689,3 @@ a.popular-post__author {
   color: #ef4634;
   text-decoration: none;
 }
-
-/***********************************************************
-************************************************************
-MEDIA QUERIES
-************************************************************
-***********************************************************/

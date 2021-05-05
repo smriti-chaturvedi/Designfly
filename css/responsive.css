@@ -13,5 +13,340 @@ Text Domain: designfly
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
 
-@media screen and (min-width: 720px) and (max-width: 1024px) {
+/******************************************* Media Query for phones ************************************************************************/
+@media screen and (max-width: 520px) {
+  /* Header Styles
+--------------------------------------------- */
+  .header-alignment-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .site-header-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .site-searchbar {
+    display: none;
+  }
+
+  .site-search-box {
+    display: none;
+  }
+
+  .site-search-img {
+    display: none;
+  }
+
+  /* Features Section
+  --------------------------------------------- */
+
+  .alignment-container {
+    height: auto;
+  }
+
+  .features-section-container {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .features-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer
+  --------------------------------------------- */
+  .footer-container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #222222;
+    width: 100vw;
+  }
+
+  /* Home Page Content Styles
+  --------------------------------------------- */
+  .home-page {
+    width: 100vw;
+  }
+
+  .home-head {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-images-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .home-head__button {
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+
+  .home-images__image {
+    width: 300px;
+  }
+
+  /* Portfolio Page Styles
+ --------------------------------------------- */
+  .portfolio-container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100vw;
+  }
+
+  .portfolio-links a.portfolio-link {
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .portfolio-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+
+  /* Blog Page Styles
+ --------------------------------------------- */
+
+  .main-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .blog-body {
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  .blog-content__comment {
+    color: #ef4634;
+  }
+
+  .blog-main__heading {
+    border-bottom: 1px solid #222222;
+  }
+
+  /* Pagination Styles
+ --------------------------------------------- */
+  .pagination {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Single Post Styles
+--------------------------------------------- */
+  .post-structure {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .post-header {
+    border-bottom: 1px solid #222222;
+    color: #62585f;
+    font-family: "Open sans", sans-serif;
+    margin-bottom: 4px;
+  }
+
+  /* Custom Portfolio Widget Styles
+--------------------------------------------- */
+  .portfolio-widget-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+
+  .portfolio-widget__image {
+    border-radius: 5px;
+    height: 90px;
+    width: 90px;
+  }
+}
+
+/******************************************* Media Query for tablets ************************************************************************/
+@media screen and (min-width: 521px) and (max-width: 768px) {
+  /* Header Styles
+  --------------------------------------------- */
+  .header-alignment-container {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .site-header-menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .site-searchbar {
+    display: none;
+  }
+
+  .site-search-box {
+    display: none;
+  }
+
+  .site-search-img {
+    display: none;
+  }
+
+  /* Features Section
+    --------------------------------------------- */
+
+  .alignment-container {
+    height: auto;
+  }
+
+  .features-section-container {
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .features-section {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer
+    --------------------------------------------- */
+  .footer-container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .site-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #222222;
+    border-top: 1px solid #222222;
+    width: 100vw;
+  }
+
+  /* Home Page Content Styles
+    --------------------------------------------- */
+  .home-page {
+    width: 100vw;
+  }
+
+  .home-head {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .home-images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .home-head__button {
+    margin-top: -5px;
+    margin-bottom: 10px;
+  }
+
+  .home-images__image {
+    width: 360px;
+  }
+
+  /* Portfolio Page Styles
+   --------------------------------------------- */
+  .portfolio-container {
+    margin: auto;
+    max-width: 1024px;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .portfolio-links a.portfolio-link {
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+  }
+
+  .portfolio-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+  }
+
+  .portfolio-image {
+    width: 350px;
+  }
+
+  /* Blog Page Styles
+   --------------------------------------------- */
+
+  .main-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .blog-container {
+    display: grid;
+    grid-template-columns: 65% 30%;
+    justify-content: space-between;
+  }
+
+  .blog-body {
+    padding-bottom: 3%;
+    padding-top: 3%;
+  }
+
+  .blog-content__comment {
+    color: #ef4634;
+  }
+
+  .blog-main__heading {
+    border-bottom: 1px solid #222222;
+  }
+
+  /* Pagination Styles
+   --------------------------------------------- */
+  .pagination {
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Single Post Styles
+  --------------------------------------------- */
+  .post-structure {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr;
+  }
 }

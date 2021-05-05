@@ -12,6 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer" style="background-image: url(<?php esc_attr_e( get_theme_file_uri() . '/assets/images/rapeatable-bg.png' ); //phpcs:ignore ?>);">
+		<div class="footer-container">
 		<div class="site-info">
 			<div class="site-info-about">
 				<div class="site-info__heading">Welcome to D'SIGNfly</div>
@@ -57,6 +58,7 @@
 						printf( esc_html__( 'Theme: %1$s by %2$s.', 'designfly' ), 'designfly', '<a href="http://underscores.me/">Smriti Chaturvedi</a>' );
 						?>
 					</p>
+		</div>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
